@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Aplikasi Streamlit untuk pemula TCG: gacha, koleksi, deck, dan latihan battle melawan bot."
 readme = "README.md"
 authors = [
-    { name = "Haigry", email = "IgnatiusHaryo2007@gmail.com" }
+    { name = "Haigry", email = "IgnatiusHaryo2007@gmail.com" },
+    { name = "Okky", email = "okkyituokky@gmail.com"},
+    { name = "Brayen", email = "r.fkr147@gmail.com"}
 ]
 requires-python = ">=3.12"
 dependencies = [
