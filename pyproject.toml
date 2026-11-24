@@ -1,13 +1,21 @@
 [project]
 name = "projek-tcg"
 version = "0.1.0"
-description = "Add your description here"
+description = "Aplikasi Streamlit untuk pemula TCG: gacha, koleksi, deck, dan latihan battle melawan bot."
 readme = "README.md"
 authors = [
     { name = "Haigry", email = "IgnatiusHaryo2007@gmail.com" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.50",
+    "pandas>=2.0",
+    "plotly>=5.20",
+    "requests>=2.31",
+    "openpyxl>=3.1",
+    "reportlab>=4.0",
+    "python-dotenv>=1.0",
+]
 
 [project.scripts]
 projek-tcg = "projek_tcg:main"
