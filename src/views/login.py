@@ -8,7 +8,7 @@ Halaman pertama yang muncul sebelum pemain login, terdiri dari 2 tab:
 
 import streamlit as st
 
-from src.core.autentikasi import ErrorAutentikasi, maks_password_len
+from core.autentikasi import ErrorAutentikasi, maks_password_len
 from theme import ambil_ikon_untuk_html
 
 
