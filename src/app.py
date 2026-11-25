@@ -136,11 +136,11 @@ def jalankan_aplikasi() -> None:
         st.stop()
 
     # Muat data progres pemain
-    nama_pemain = st.session_state["user"]
-    lokasi_simpan = cari_file_simpanan_pemain(nama_pemain)
-    if "progres" not in st.session_state:
-        st.session_state["progres"] = ProgresPemain.muat_dari_file(lokasi_simpan)
-    progres = st.session_state["progres"]
+    # nama_pemain = st.session_state["user"]
+    # lokasi_simpan = cari_file_simpanan_pemain(nama_pemain)
+    # if "progres" not in st.session_state:
+    #     st.session_state["progres"] = ProgresPemain.muat_dari_file(lokasi_simpan)
+    # progres = st.session_state["progres"]
 
     # Pastikan halaman aktif selalu valid (default: Beranda)
     if st.session_state.get("halaman_aktif") not in SEMUA_HALAMAN:
@@ -149,17 +149,17 @@ def jalankan_aplikasi() -> None:
     # Tampilkan navigasi atas dan isi halaman yang dipilih
     tampilkan_menu_atas()
 
-    katalog_kartu, catatan = muat_katalog_kartu()
-    data_aplikasi = DataAplikasi(
-        katalog_kartu=katalog_kartu,
-        progres=progres,
-        catatan=catatan,
-        lokasi_simpan=lokasi_simpan,
-    )
-    SEMUA_HALAMAN[st.session_state["halaman_aktif"]].tampilkan_halaman(data_aplikasi)
+    # katalog_kartu, catatan = muat_katalog_kartu()
+    # data_aplikasi = DataAplikasi(
+    #     katalog_kartu=katalog_kartu,
+    #     progres=progres,
+    #     catatan=catatan,
+    #     lokasi_simpan=lokasi_simpan,
+    # )
+    # SEMUA_HALAMAN[st.session_state["halaman_aktif"]].tampilkan_halaman(data_aplikasi)
 
-    # Tampilkan panel kiri di akhir agar angka koin & rekor selalu terbaru
-    tampilkan_panel_kiri(nama_pemain, progres)
+    # # Tampilkan panel kiri di akhir agar angka koin & rekor selalu terbaru
+    # tampilkan_panel_kiri(nama_pemain, progres)
 
 
 jalankan_aplikasi()
