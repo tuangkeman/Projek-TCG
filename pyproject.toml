@@ -1,5 +1,5 @@
 [project]
-name = "projek-tcg"
+name = "Projek-TCG"
 version = "0.1.0"
 description = "Aplikasi Streamlit untuk pemula TCG: gacha, koleksi, deck, dan latihan battle melawan bot."
 readme = "README.md"
@@ -18,10 +18,3 @@ dependencies = [
     "reportlab>=4.0",
     "python-dotenv>=1.0",
 ]
-
-[project.scripts]
-projek-tcg = "projek_tcg:main"
-
-[build-system]
-requires = ["uv_build>=0.12.8,<0.13.0"]
-build-backend = "uv_build"
