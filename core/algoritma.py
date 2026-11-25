@@ -66,4 +66,5 @@ def fisher_yates_shuffle(daftar_data, pengacak=None):
         hasil_kocok[posisi_belakang] = hasil_kocok[posisi_acak]
         hasil_kocok[posisi_acak] = sementara
 
+
     return hasil_kocok
