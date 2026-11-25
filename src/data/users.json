@@ -1,0 +1,12 @@
+{
+  "haigry": {
+    "password": {
+      "salt": "8f21c52984ae2004647f1a5696dc2cf4",
+      "hash": "ab3c0fda977c83fc4849bc9a08ed7f7e7b751a39cee59f27174b00b666109235",
+      "iter": 200000
+    },
+    "created": 1795586209,
+    "fails": 0,
+    "locked_until": 0
+  }
+}
